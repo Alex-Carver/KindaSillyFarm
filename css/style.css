@@ -10,7 +10,7 @@
 
 iframe{
   width: 100%;
-  min-height: 400px;
+  min-height: 600px;
 }
 
 header{
@@ -179,13 +179,6 @@ hr {
 
 /*------Heading Box------*/
 
-.jumbotron-fluid{
-  height: 800px;
-  width: 100%;
-  background-color: none;
-  border-radius: none;
-  border:none;
-}
 .headerBottom{
   height: 80px;
   background:#fff;
@@ -213,7 +206,7 @@ hr {
     font-size: 25px;
     color: #000;
     line-height: 35px;
-    letter-spacing: 3px;
+    letter-spacing: 1px;
     font-weight: 400;
     margin-top: 20px;
     margin-bottom: 40px;
@@ -261,7 +254,7 @@ hr {
   font-size: 20px;
   color: #000;
   line-height: 35px;
-  letter-spacing: 3px;
+  letter-spacing: 1px;
   font-weight: 400;
   margin-top: 20px;
 }
@@ -297,7 +290,7 @@ hr {
     font-size: 30px;
     color: rgb(0, 0, 0);
     line-height: 40px;
-    letter-spacing: 3px;
+    letter-spacing: 1px;
     font-weight: 400;
     margin-top: 70px;
 }
@@ -331,7 +324,7 @@ hr {
   font-size: 18px;
   color: #fff;
   line-height: 30px;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   font-weight: 400;
 }
 
@@ -340,7 +333,7 @@ p.copy{
   font-family: 'Roboto', sans-serif;
   font-size: 14px!important;
   color: #fff;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   font-weight: 400;
   padding:0!important;
 }
@@ -354,6 +347,11 @@ p.copy{
 @media only screen 
 and (min-width : 768px) 
 and (max-width : 1024px)  { 
+
+  iframe{
+  width: 100%;
+  min-height: 600px;
+}
 
 .headerBottom {
     height: 80px;
@@ -390,7 +388,7 @@ and (max-width : 1024px)  {
     font-size: 30px;
     color: #000;
     line-height: 40px;
-    letter-spacing: 3px;
+    letter-spacing: 1px;
     font-weight: 400;
     margin-top: 30px;
 }
@@ -414,7 +412,7 @@ and (max-width : 1024px)  {
   font-size: 15px;
   color: #fff;
   line-height: 30px;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   font-weight: 400;
 }
 
@@ -427,6 +425,11 @@ and (max-width : 1024px)  {
 @media only screen 
 and (min-width : 375px) 
 and (max-width : 667px) {
+
+    iframe{
+  width: 100%;
+  min-height: 300px;
+}
 
   .headerBottom {
     height: 80px;
@@ -452,9 +455,8 @@ and (max-width : 667px) {
     background: #000;
     height: auto;
     padding-top: 10px;
-    min-height: 500px;
     padding-top: 50px;
-    padding-bottom: 0px;
+    padding-bottom: 50px;
 }
 
 #section3 {
@@ -468,7 +470,7 @@ and (max-width : 667px) {
     font-size: 20px;
     color: #000;
     line-height: 40px;
-    letter-spacing: 3px;
+    letter-spacing: 1px;
     font-weight: 400;
     margin-top: 0px;
 }
@@ -498,7 +500,7 @@ and (max-width : 667px) {
     font-size: 20px;
     color: rgb(0, 0, 0);
     line-height: 40px;
-    letter-spacing: 3px;
+    letter-spacing: 1px;
     font-weight: 400;
     margin-top: 40px;
 }
@@ -516,11 +518,6 @@ h3{
   margin-top: 20px;c
 }
 
-
-iframe{
-  width: 100%;
-  height: 400px;
-}
 
 .carousel-indicators li {
     position: relative;
@@ -575,9 +572,8 @@ and (max-width : 568px) {
     background: #000;
     height: auto;
     padding-top: 10px;
-    min-height: 500px;
     padding-top: 50px;
-    padding-bottom: 0px;
+    padding-bottom: 50px;
 }
 
 #section3 {
@@ -591,7 +587,7 @@ and (max-width : 568px) {
     font-size: 20px;
     color: #000;
     line-height: 40px;
-    letter-spacing: 3px;
+    letter-spacing: 1px;
     font-weight: 400;
     margin-top: 0px;
 }
@@ -622,7 +618,7 @@ and (max-width : 568px) {
     font-size: 20px;
     color: rgb(0, 0, 0);
     line-height: 40px;
-    letter-spacing: 3px;
+    letter-spacing: 1px;
     font-weight: 400;
     margin-top: 40px;
 }
@@ -631,7 +627,7 @@ p.copy {
     font-family: 'Roboto', sans-serif;
     font-size: 8px;
     color: #000;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     font-weight: 400;
     padding-top: 15px;
 }
@@ -641,10 +637,6 @@ h3{
 }
 
 
-iframe{
-  width: 100%;
-  height: 400px;
-}
 
 .carousel-indicators li {
     position: relative;
@@ -666,6 +658,10 @@ iframe{
     font-weight: 400;
     padding-right: 10px;
     padding-left: 10px;
+}
+
+#footer p, h3 {
+    padding-left: 0px;
 }
 }
 
