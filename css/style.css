@@ -15,13 +15,16 @@ iframe{
 
 header{
   background-color: #fff;
-  height: 600px;
+  height: 100vh;
   width: 100%;
   background-image: url(../img/header.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  position: relative;
+  max-height: 800px;
 }
+
 
 footer{
   width: 100%;
@@ -192,6 +195,7 @@ hr {
   padding-top: 20px;
   padding-left:86px;
   width: 400px;
+  margin-bottom: -1px;
 }
 
 
@@ -345,38 +349,25 @@ p.copy{
   padding-left: 50px;
 }
 
-@media only screen 
-and (min-width : 1300px) 
-and (max-width : 1440px)  { 
-.headerBottom {
-    height: 80px;
-    background: #fff;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    padding-top: 0;
-    padding-left: 40px;
-    width: 400px;
-    margin-bottom: 150px;
-}
-}
 
 
 @media only screen 
 and (min-width : 768px) 
 and (max-width : 1024px)  { 
 
-  .headerBottom {
+.headerBottom {
     height: 80px;
     background: #fff;
     position: absolute;
     bottom: 0;
     left: 0;
-    padding-top: 0;
-    padding-left: 40px;
+    padding-top: 20px;
+    padding-left: 20px;
     width: 400px;
-    margin-bottom: 240px;
+    margin-bottom: -1px;
 }
+
+
 
 #section1 {
     padding-top: 50px;
@@ -437,6 +428,18 @@ and (max-width : 1024px)  {
 and (min-width : 375px) 
 and (max-width : 667px) {
 
+  .headerBottom {
+    height: 80px;
+    background: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding-top: 20px;
+    padding-left: 10px;
+    width: 300px;
+    margin-bottom: -1px;
+}
+
   #section1 {
     padding-top: 50px;
     min-height: 765px;
@@ -477,17 +480,7 @@ and (max-width : 667px) {
     height: 50px;
     width: 50px;
 }
-.headerBottom {
-    height: 80px;
-    background: #fff;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    padding-top: 0;
-    padding-left: 10px;
-    width: 300px;
-    margin-bottom: -100px;
-}
+
 
 
 .carousel-inner {
@@ -558,6 +551,18 @@ iframe{
 and (min-width : 320px) 
 and (max-width : 568px) { 
 
+  .headerBottom {
+    height: 80px;
+    background: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding-top: 20px;
+    padding-left: 10px;
+    width: 300px;
+    margin-bottom: -1px;
+}
+
   #section1 {
     padding-top: 50px;
     min-height: 765px;
@@ -599,17 +604,7 @@ and (max-width : 568px) {
     width: 50px;
 }
 
-.headerBottom {
-    height: 80px;
-    background: #fff;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    padding-top: 0;
-    padding-left: 10px;
-    width: 300px;
-    margin-bottom: -140px;
-}
+
 
 
 .carousel-inner {
