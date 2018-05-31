@@ -21,7 +21,6 @@ header{
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-attachment: fixed;
 }
 
 footer{
@@ -176,6 +175,14 @@ hr {
 
 
 /*------Heading Box------*/
+
+.jumbotron-fluid{
+  height: 800px;
+  width: 100%;
+  background-color: none;
+  border-radius: none;
+  border:none;
+}
 .headerBottom{
   height: 80px;
   background:#fff;
@@ -338,6 +345,22 @@ p.copy{
   padding-left: 50px;
 }
 
+@media only screen 
+and (min-width : 1300px) 
+and (max-width : 1440px)  { 
+.headerBottom {
+    height: 80px;
+    background: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding-top: 0;
+    padding-left: 40px;
+    width: 400px;
+    margin-bottom: 150px;
+}
+}
+
 
 @media only screen 
 and (min-width : 768px) 
@@ -454,7 +477,6 @@ and (max-width : 667px) {
     height: 50px;
     width: 50px;
 }
-
 .headerBottom {
     height: 80px;
     background: #fff;
@@ -464,7 +486,7 @@ and (max-width : 667px) {
     padding-top: 0;
     padding-left: 10px;
     width: 300px;
-    margin-bottom: -140px;
+    margin-bottom: -100px;
 }
 
 
@@ -650,8 +672,5 @@ iframe{
     padding-right: 10px;
     padding-left: 10px;
 }
-
-
-
-
 }
+
