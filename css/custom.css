@@ -44,7 +44,7 @@ h1{
 
 h2{
   font-family: 'Roboto', sans-serif;
-  font-size: 40px;
+  font-size: 35px;
   color: #000;
   line-height: 68px;
   letter-spacing: 5px;
@@ -130,10 +130,10 @@ hr {
     background-image: url(../img/topBackground.png);
     background-repeat: no-repeat;
     width: 100%;
-    height: 200px;
+    height: 220px;
     background-size: cover;
     background-position: center;
-    padding-top: 8px;
+    padding-top: 26px;
 }
 
 
@@ -182,14 +182,14 @@ hr {
 
 /*------Heading Box------*/
 
-.headerBottom{
+.headerBottom {
   height: 80px;
-  background:#fff;
+  background: #fff;
   position: absolute;
   bottom: 0;
   left: 0;
   padding-top: 20px;
-  padding-left:86px;
+  padding-left: 85px;
   width: 400px;
   margin-bottom: -1px;
 }
@@ -381,7 +381,7 @@ and (max-width : 1024px)  {
     bottom: 0;
     left: 0;
     padding-top: 20px;
-    padding-left: 20px;
+    padding-left: 33px;
     width: 400px;
     margin-bottom: -1px;
 }
@@ -437,10 +437,10 @@ and (max-width : 667px) {
     background-image: url(../img/topBackground.png);
     background-repeat: no-repeat;
     width: 100%;
-    height: 200px;
+    height: 220px;
     background-size: cover;
     background-position: center;
-    padding-top: 35px!important;
+    padding-top: 26px;
 }
 
 .navbar-dark .navbar-nav .nav-link {
@@ -463,17 +463,25 @@ and (max-width : 667px) {
   border-color: rgba(255,255,255,1)!important;
 }
 
+.topBackground {
+    background-image: url(../img/topBackground.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 220px;
+    background-size: cover;
+    background-position: center;
+    padding-top: 55px!important;
+}
 
-.headerBottom {
-    height: 80px;
-    background: #fff;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    padding-top: 20px;
-    padding-left: 10px;
-    width: 300px;
-    margin-bottom: -1px;
+h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    color: #000;
+    margin-bottom: 40px;
+    line-height: 68px;
+    letter-spacing: 5px;
+    font-weight: 700;
+    text-shadow: none;
 }
   
   h2{
@@ -585,16 +593,27 @@ p.copy {
 
 @media only screen 
 and (min-width : 320px) 
-and (max-width : 568px) { 
+and (max-width : 568px) {
+
+  h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    color: #000;
+    margin-bottom: 40px;
+    line-height: 68px;
+    letter-spacing: 5px;
+    font-weight: 700;
+    text-shadow: none;
+}
 
 .topBackground {
     background-image: url(../img/topBackground.png);
     background-repeat: no-repeat;
     width: 100%;
-    height: 200px;
+    height: 220px;
     background-size: cover;
     background-position: center;
-    padding-top: 40px;
+    padding-top: 60px;
 }
 
 .navbar-dark .navbar-toggler .custom-toggler{
@@ -618,14 +637,18 @@ and (max-width : 568px) {
     margin-right: auto;
   }
 
-  .headerBottom {
+  .footerLogo{
+
+  }
+
+.headerBottom {
     height: 80px;
     background: #fff;
     position: absolute;
     bottom: 0;
     left: 0;
     padding-top: 20px;
-    padding-left: 10px;
+    padding-left: 15px;
     width: 300px;
     margin-bottom: -1px;
 }
@@ -722,3 +745,19 @@ h3{
 }
 }
 
+
+/*--Only Iphone 4's--*/
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+
+  .topBackground {
+    background-image: url(../img/topBackground.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 220px;
+    background-size: cover;
+    background-position: center;
+    padding-top: 80px;
+}
+}
