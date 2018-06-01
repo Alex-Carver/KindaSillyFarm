@@ -40,6 +40,7 @@ h1{
   line-height: 68px;
   letter-spacing: 5px;
   font-weight: 700;
+  text-shadow: none;
 }
 
 h2{
@@ -49,6 +50,7 @@ h2{
   line-height: 68px;
   letter-spacing: 5px;
   font-weight: 400;
+  text-shadow: none;
 }
 
 h3{
@@ -57,10 +59,11 @@ h3{
   color: #fff;
   letter-spacing: 3px;
   font-weight: 700;
+  text-shadow: none;
 }
 
 p{
-  font-family: 'Roboto';
+  font-family: 'Roboto', sans-serif;
 }
 
 b{
@@ -124,13 +127,14 @@ hr {
 
 /*---------------Navbar styles------------------*/
 
-.topBackground{
-  background-image: url(../img/topBackground.png);
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 200px;
-  background-size: cover;
-  background-position: center;
+.topBackground {
+    background-image: url(../img/topBackground.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    padding-top: 8px;
 }
 
 
@@ -142,9 +146,8 @@ hr {
 
 
 /*---Nav bar---*/
-.bg-success {
+.bg-dark {
     background-color: #000!important;
-    margin-top: -5px;
 }
 
 
@@ -156,6 +159,7 @@ hr {
   font-weight: 400;
   padding-right: 20px;
   padding-left: 20px;
+  text-decoration: none;
 }
 
 .nav-link {
@@ -375,12 +379,9 @@ and (max-width : 1024px)  {
     padding-bottom: 50px;
 }
 
-  .navbar-toggler {
-    background-color: transparent;
-    border: none;
-    background-image: url(../img/togglerFinal.svg);
-    height: 50px;
-    width: 50px;
+.navbar-dark .navbar-toggler .custom-toggler{
+
+    border-color: rgba(255,255,255,1)!important;
 }
 
 #section3 p {
@@ -398,13 +399,14 @@ and (max-width : 1024px)  {
     height: auto;
 }
 
-.nav-link {
+.navbar-dark .navbar-nav .nav-link {
     color: rgba(255,255,255,.5);
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
     font-weight: 400;
     padding-right: 10px;
     padding-left: 10px;
+    text-decoration: none;
 }
 
 #footer p{
@@ -425,6 +427,38 @@ and (max-width : 1024px)  {
 @media only screen 
 and (min-width : 375px) 
 and (max-width : 667px) {
+
+.navbar-dark .navbar-toggler .custom-toggler{
+    color: rgba(255,255,255,1)!important;
+    border-color: rgba(255,255,255,1)!important;
+}
+
+  
+  h2{
+  font-family: 'Roboto', sans-serif!important;
+  font-size: 30px!important;
+  color: #000!important;
+  line-height: 68px!important;
+  letter-spacing: 5px!important;
+  font-weight: 400!important;
+  text-shadow: none;
+}
+
+  .topBackground {
+    background-image: url(../img/topBackground.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    padding-top: 35px!important;
+}
+
+  #logo{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
     iframe{
   width: 100%;
@@ -475,13 +509,7 @@ and (max-width : 667px) {
     margin-top: 0px;
 }
 
-  .navbar-toggler {
-    background-color: transparent;
-    border: none;
-    background-image: url(../img/togglerFinal.svg);
-    height: 50px;
-    width: 50px;
-}
+
 
 
 
@@ -507,15 +535,15 @@ and (max-width : 667px) {
 
 p.copy {
     font-family: 'Roboto', sans-serif;
-    font-size: 8px;
+    font-size: 8px!important;
     color: #000;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     font-weight: 400;
     padding-top: 15px;
 }
 
 h3{
-  margin-top: 20px;c
+  margin-top: 20px;
 }
 
 
@@ -532,13 +560,18 @@ h3{
     background-color: rgba(255,255,255,.5);
 }
 
-.nav-link {
+.navbar-dark .navbar-nav .nav-link {
     color: rgba(255,255,255,.5);
     font-family: 'Roboto', sans-serif;
-    font-size: 20px;
+    font-size: 10px;
     font-weight: 400;
-    padding-right: 10px;
-    padding-left: 10px;
+    padding-right: 2px;
+    padding-left: 2px;
+    text-decoration: none;
+}
+
+.navbar-expand{
+  margin-top: -10px;
 }
 
 
@@ -547,6 +580,41 @@ h3{
 @media only screen 
 and (min-width : 320px) 
 and (max-width : 568px) { 
+
+.navbar-dark .navbar-toggler .custom-toggler{
+    color: rgba(255,255,255,1)!important;
+    border-color: rgba(255,255,255,1)!important;
+}
+
+  .navbar-expand{
+  margin-top: -15px;
+}
+
+  .topBackground {
+    background-image: url(../img/topBackground.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    padding-top: 40px;
+}
+
+  .navbar-dark .navbar-nav .nav-link {
+    color: rgba(255,255,255,.5);
+    font-family: 'Roboto', sans-serif;
+    font-size: 10px;
+    font-weight: 400;
+    padding-right: 2px;
+    padding-left: 2px;
+    text-decoration: none;
+}
+
+    #logo{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
   .headerBottom {
     height: 80px;
@@ -592,16 +660,6 @@ and (max-width : 568px) {
     margin-top: 0px;
 }
 
-  .navbar-toggler {
-    background-color: transparent;
-    border: none;
-    background-image: url(../img/togglerFinal.svg);
-    height: 50px;
-    width: 50px;
-}
-
-
-
 
 .carousel-inner {
     margin-top: 10px;
@@ -625,7 +683,7 @@ and (max-width : 568px) {
 
 p.copy {
     font-family: 'Roboto', sans-serif;
-    font-size: 8px;
+    font-size: 8px!important;
     color: #000;
     letter-spacing: 1px;
     font-weight: 400;
@@ -651,14 +709,7 @@ h3{
     background-color: rgba(255,255,255,.5);
 }
 
-.nav-link {
-    color: rgba(255,255,255,.5);
-    font-family: 'Roboto', sans-serif;
-    font-size: 20px;
-    font-weight: 400;
-    padding-right: 10px;
-    padding-left: 10px;
-}
+
 
 #footer p, h3 {
     padding-left: 0px;
