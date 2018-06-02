@@ -4,7 +4,7 @@
 	
 	for (var i = 0; i < youtube.length; i++) {
 		
-		var source = "https://www.youtube.com/embed/nvPJFC-HLF8"+ youtube[i].dataset.embed +"/sddefault.jpg";
+		var source = "https://youtu.be/nvPJFC-HLF8"+ youtube[i].dataset.embed +"/sddefault.jpg";
 		
 		var image = new Image();
 				image.src = source;
