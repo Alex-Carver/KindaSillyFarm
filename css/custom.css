@@ -2,16 +2,73 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
 
 
+
+
+
+.wrapper {
+  max-width: 680px;
+  margin: 60px auto;
+  padding: 0 20px;
+}
+
+.youtube {
+  background-color: #000;
+  margin-bottom: 30px;
+  position: relative;
+  padding-top: 56.25%;
+  overflow: hidden;
+  cursor: pointer;
+}
+.youtube img {
+  width: 100%;
+  top: -16.82%;
+  left: 0;
+  opacity: 0.7;
+}
+.youtube .play-button {
+  width: 90px;
+  height: 60px;
+  background-color: #333;
+  box-shadow: 0 0 30px rgba( 0,0,0,0.6 );
+  z-index: 1;
+  opacity: 0.8;
+  border-radius: 6px;
+}
+.youtube .play-button:before {
+  content: "";
+  border-style: solid;
+  border-width: 15px 0 15px 26.0px;
+  border-color: transparent transparent transparent #fff;
+}
+.youtube img,
+.youtube .play-button {
+  cursor: pointer;
+}
+.youtube img,
+.youtube iframe,
+.youtube .play-button,
+.youtube .play-button:before {
+  position: absolute;
+}
+.youtube .play-button,
+.youtube .play-button:before {
+  top: 50%;
+  left: 50%;
+  transform: translate3d( -50%, -50%, 0 );
+}
+.youtube iframe {
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
 /*----------Elements-----------*/
 *{
   padding:0;
   margin:0;
 }
 
-iframe{
-  width: 100%;
-  min-height: 600px;
-}
+
 
 header{
   background-color: #fff;
@@ -127,7 +184,7 @@ hr {
 /*---------------Navbar styles------------------*/
 
 .topBackground {
-    background-image: url(../img/topBackground.png);
+    background-image: url(../img/wood.jpg);
     background-repeat: no-repeat;
     width: 100%;
     height: 220px;
@@ -138,7 +195,7 @@ hr {
 
 
 #logo {
-  width: 400px;
+  width: 280px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -147,6 +204,7 @@ hr {
 /*---Nav bar---*/
 .bg-dark {
     background-color: #000!important;
+    min-height: 80px;
 }
 
 
@@ -272,7 +330,7 @@ hr {
 
 #section4 {
   min-height: 500px;
-  background-image: url(../img/services.png);
+  background-image: url(../img/services.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -305,7 +363,7 @@ hr {
 
 
 .footerBackground{
-  background-image: url(../img/topBackground.png);
+  background-image: url(../img/wood.jpg);
   background-repeat: no-repeat;
   width: 100%;
   height: 200px;
@@ -313,6 +371,13 @@ hr {
   background-position: center;
 
 }
+
+.footerLogo {
+    width: 280px!important;
+    margin-right: auto;
+    margin-left: auto;
+}
+
 
 
 .footerNav ul, li{
@@ -427,6 +492,12 @@ and (max-width : 1024px)  {
     padding-left: 0px;
 }
 
+.footerLogo {
+    width: 280px!important;
+    margin-right: auto;
+    margin-left: auto;
+}
+
 }
 
 @media only screen 
@@ -434,7 +505,7 @@ and (min-width : 375px)
 and (max-width : 667px) {
 
 .topBackground {
-    background-image: url(../img/topBackground.png);
+    background-image: url(../img/wood.jpg);
     background-repeat: no-repeat;
     width: 100%;
     height: 220px;
@@ -453,24 +524,24 @@ and (max-width : 667px) {
     text-decoration: none;
 }
 
-#logo{
-    width: 100%;
+#logo {
+    width: 285px!important;
     margin-left: auto;
     margin-right: auto;
-  }
+}
 
 .navbar-dark .navbar-toggler .custom-toggler{
   border-color: rgba(255,255,255,1)!important;
 }
 
 .topBackground {
-    background-image: url(../img/topBackground.png);
+    background-image: url(../img/wood.jpg);
     background-repeat: no-repeat;
     width: 100%;
     height: 220px;
     background-size: cover;
     background-position: center;
-    padding-top: 55px!important;
+    padding-top: 20px!important;
 }
 
 h1 {
@@ -572,6 +643,12 @@ iframe{
     margin-top: 40px;
 }
 
+.footerLogo {
+    width: 265px!important;
+    margin-right: auto;
+    margin-left: auto;
+}
+
 p.copy {
     font-family: 'Roboto', sans-serif;
     font-size: 8px!important;
@@ -582,9 +659,7 @@ p.copy {
 }
 
 /*--Bottom Nav Moved up to connect with logo*/
-.navbar-expand{
-  margin-top: -10px;
-}
+
 
 
 
@@ -607,7 +682,7 @@ and (max-width : 568px) {
 }
 
 .topBackground {
-    background-image: url(../img/topBackground.png);
+    background-image: url(../img/wood.jpg);
     background-repeat: no-repeat;
     width: 100%;
     height: 220px;
@@ -637,9 +712,11 @@ and (max-width : 568px) {
     margin-right: auto;
   }
 
-  .footerLogo{
-
-  }
+.footerLogo {
+    width: 265px!important;
+    margin-right: auto;
+    margin-left: auto;
+}
 
 .headerBottom {
     height: 80px;
@@ -752,7 +829,7 @@ and (min-device-width : 320px)
 and (max-device-width : 480px) {
 
   .topBackground {
-    background-image: url(../img/topBackground.png);
+    background-image: url(../img/wood.jpg);
     background-repeat: no-repeat;
     width: 100%;
     height: 220px;
@@ -760,4 +837,27 @@ and (max-device-width : 480px) {
     background-position: center;
     padding-top: 80px;
 }
+
+.bottomTopBackground{
+   background-image: url(../img/wood.jpg);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 220px;
+    background-size: cover;
+    background-position: center;
+    padding-top: 20px;
+}
+
+#logo {
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footerLogo {
+    width: 180px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
 }
